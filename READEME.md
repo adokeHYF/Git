@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-
 master
 git 生成密钥：
-=======
-生成密钥：
->>>>>>> dev
 
 	1.配置 
 	  git config –global user.name ‘xxxxx’ 
