@@ -88,6 +88,13 @@ git add hello.py
 git commit -m 'initial project version'
 ```
 
+[13] 创建本地分支，将本地分支推送到远程
+
+```
+git branch 分支名称
+git push --set-upstream origin 分支名称
+``` 
+
 > ##### git commit之后，想撤销commit
 
 ```
