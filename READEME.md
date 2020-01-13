@@ -11,7 +11,7 @@ git config –global user.email "xxx@xx.xxx"
 2.生成秘钥
 
 ```
-ssh-keygen -t rsa -C "上面的邮箱"
+ssh-keygen -t rsa -C ‘上面的邮箱’
 ```
 
 3.接着按3个回车,则在.ssh目录下得到了两个文件：id_rsa（私有秘钥）和id_rsa.pub（公有密钥）如果想登陆远端，则需要将rsa.pub里的秘钥添加到远端。
