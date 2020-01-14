@@ -123,7 +123,8 @@ The file will have its original line endings in your working director
 
 > #### git将某个版本作为 新的分支
 ```
-git log --online
+git log --oneline
 git checkout 分支哈希
 git branch -b 新的分支
 ```
+origin/master
