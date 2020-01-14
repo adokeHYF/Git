@@ -88,6 +88,13 @@ git add hello.py
 git commit -m 'initial project version'
 ```
 
+[13] 创建本地分支，将本地分支推送到远程
+
+```
+git branch 分支名称
+git push --set-upstream origin 分支名称
+``` 
+
 > ##### git commit之后，想撤销commit
 
 ```
@@ -113,3 +120,10 @@ The file will have its original line endings in your working director
 这是由于换行符冲突引起的报警，因为git bash默认使用vim作为文件编辑器，vim默认使用LF作为换行符，与linux中的换行符一直，它们都是用LF换行符，但是windows默认使用CRLF作为换行符，大多数程序员都会使用IDE或者文本编辑器来编辑文本，这些编辑器通常能够自动识别换行符，除了windows自带的记事本等文本编辑器，记事本只会使用CRLF作为换行符，由于我习惯使用vim编辑文本，所以文件中的换行符都是LF，当git检测到时，它会贴心的帮我装换一下，但是其实我并不是特别需要，因为我在bash中不会使用记事本编辑文件，所以，我们可以禁用自动转换的功能，使用如下设置，禁用自动转换换行符：
 
 ``` git config --global core.autocrlf false ```
+
+> #### git将某个版本作为 新的分支
+```
+git log --online
+git checkout 分支哈希
+git branch -b 新的分支
+```
