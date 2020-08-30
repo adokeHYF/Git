@@ -23,16 +23,3 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip
 
 
 
-
-select user,authentication_string,plugin,host from user
-
-创建用户:
-create user 'cna'@'%' identified by 'password';
-
-创建cna用户，并且给最高权限
-GRANT ALL PRIVILEGES ON *.* TO 'cna'@'%' IDENTIFIED BY 'youpassword' WITH GRANT OPTION;
-
-查看cna用户权限:
-show grants for 'cna'@'%'; 
-
-
